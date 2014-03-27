@@ -1,5 +1,9 @@
 '''
 Created on Mar 27, 2014
+
+Nat Laughlin
+http://natlaughlin.com
+http://github.com/natlaughlin
 '''
 
 '''
