@@ -8,7 +8,7 @@ See: http://nbviewer.ipython.org/github/myhrvold/MH370_MCMC/blob/master/MH370_MC
 For viewing IPython notebook in the web (or you can copy the url of the file yourself, in here: http://nbviewer.ipython.org/ )
 
 
-Updates 3/27 (myhrvold):
+Updates Mar 27 2014 (myhrvold):
 
 Accompanying Fast Company Labs story: http://www.fastcolabs.com/3028265/how-i-narrowed-down-the-location-of-malaysia-air-using-monte-carlo-data-models
 
@@ -16,7 +16,7 @@ Feel free to reach out with comments or suggestions -- especially critiques and 
 
 I've noticed several typos in the IPython notebook; I plan on addressing in an updated version (separate notebook).
 
-Updates 3/27 (natlaughlin):
+Updates Mar 27 2014 (natlaughlin):
 
 mh370.py is the standalone python script version of the above work by Conor L. Myhrvold (myhrvold).  
 
