@@ -22,6 +22,6 @@ mh370.py is the standalone python script version of the above work by Conor L. M
 
 To run it, you will need to unzip runways.txt.zip to the same directory as the script.
 
-It outputs the plots to SVG instead of displaying them, and it looks for "runways.txt" in the same directory as the script, but otherwise everything is the same.
+This script outputs the plots to SVG instead of displaying them, but otherwise everything is the same.
 
 ==========
