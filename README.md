@@ -41,7 +41,7 @@ Installation Requirements
 - basemap (https://github.com/matplotlib/basemap)
 - seaborn (https://github.com/mwaskom/seaborn)
 
-- Mac OSX
+Mac OSX
 ```
 ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)"
 brew install python geos
