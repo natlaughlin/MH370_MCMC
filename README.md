@@ -33,24 +33,28 @@ I've moved the previous version to the archive directory.
 Installation Requirements
 ----------------
 
-python (https://www.python.org/download/releases/2.7.6/)
-GEOS (http://trac.osgeo.org/geos/)
-numpy (http://www.numpy.org/)
-scipy (http://www.scipy.org/)
-matplotlib (http://matplotlib.org/)
-basemap (https://github.com/matplotlib/basemap)
-seaborn (https://github.com/mwaskom/seaborn)
+- python (https://www.python.org/download/releases/2.7.6/)
+- GEOS (http://trac.osgeo.org/geos/)
+- numpy (http://www.numpy.org/)
+- scipy (http://www.scipy.org/)
+- matplotlib (http://matplotlib.org/)
+- basemap (https://github.com/matplotlib/basemap)
+- seaborn (https://github.com/mwaskom/seaborn)
 
 - Mac OSX
-	ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)"
-	brew install python geos
-	virtualenv env
-	source ./env/bin/activate
-	export ARCHFLAGS=-Wno-error=unused-command-line-argument-hard-error-in-future
-	pip install numpy scipy matplotlib seaborn
-	easy_install basemap
+```
+ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)"
+brew install python geos
+virtualenv env
+source ./env/bin/activate
+export ARCHFLAGS=-Wno-error=unused-command-line-argument-hard-error-in-future
+pip install numpy scipy matplotlib seaborn
+easy_install basemap
+```
 	
 Execute
 ----------------
+```
 unzip runways.txt.zip
 python ./mh370.py
+```
