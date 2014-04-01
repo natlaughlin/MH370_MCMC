@@ -36,9 +36,14 @@ I've moved the previous version to the archive directory.
 2014-04-01 (natlaughlin):
 
 Moved v1 script to the archive.  Created a standalone script according to:
+
 http://qa.nbviewer.ipython.org/github/myhrvold/MH370_MCMC/blob/master/MH370_MC_ConorMyhrvold-V2-Part1.ipynb?create=1
+
 http://qa.nbviewer.ipython.org/github/myhrvold/MH370_MCMC/blob/master/MH370_MC_ConorMyhrvold-V2-Part2.ipynb?create=1
+
 http://qa.nbviewer.ipython.org/github/myhrvold/MH370_MCMC/blob/master/MH370_MC_ConorMyhrvold-V2-Part3.ipynb?create=1
+
+
 
 It is now called:
 mh370_mcmc_v2.py
