@@ -7,6 +7,9 @@ See: http://nbviewer.ipython.org/github/myhrvold/MH370_MCMC/blob/master/MH370_MC
 
 For viewing IPython notebook in the web (or you can copy the url of the file yourself, in here: http://nbviewer.ipython.org/ )
 
+The original source is hosted here:
+https://github.com/myhrvold/MH370_MCMC
+
 Updates
 ----------------
 
