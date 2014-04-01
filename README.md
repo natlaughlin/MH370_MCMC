@@ -7,7 +7,10 @@ See: http://nbviewer.ipython.org/github/myhrvold/MH370_MCMC/blob/master/MH370_MC
 
 For viewing IPython notebook in the web (or you can copy the url of the file yourself, in here: http://nbviewer.ipython.org/ )
 
-Updates Mar 27 2014 (myhrvold):
+Updates
+----------------
+
+2014-03-27 (myhrvold):
 
 Accompanying Fast Company Labs story: http://www.fastcolabs.com/3028265/how-i-narrowed-down-the-location-of-malaysia-air-using-monte-carlo-data-models
 
@@ -15,7 +18,7 @@ Feel free to reach out with comments or suggestions -- especially critiques and 
 
 I've noticed several typos in the IPython notebook; I plan on addressing in an updated version (separate notebook).
 
-Updates Mar 27 2014 (natlaughlin):
+2014-03-27 (natlaughlin):
 
 mh370.py is the standalone python script version of the above work by Conor L. Myhrvold (myhrvold).  
 
@@ -23,12 +26,27 @@ To run it, you will need to unzip runways.txt.zip to the same directory as the s
 
 This script outputs the plots to SVG instead of displaying them, but otherwise everything is the same.
 
-Updates Mar 30 2014 (natlaughlin):
+2014-03-29 (natlaughlin):
 
 The latest bugfixed version is now updated according to:
 http://nbviewer.ipython.org/github/myhrvold/MH370_MCMC/blob/master/MH370_MC_ConorMyhrvold-bug_fixes.ipynb?create=1
 
 I've moved the previous version to the archive directory.
+
+2014-04-01 (natlaughlin):
+
+Moved v1 script to the archive.  Created a standalone script according to:
+http://qa.nbviewer.ipython.org/github/myhrvold/MH370_MCMC/blob/master/MH370_MC_ConorMyhrvold-V2-Part1.ipynb?create=1
+http://qa.nbviewer.ipython.org/github/myhrvold/MH370_MCMC/blob/master/MH370_MC_ConorMyhrvold-V2-Part2.ipynb?create=1
+http://qa.nbviewer.ipython.org/github/myhrvold/MH370_MCMC/blob/master/MH370_MC_ConorMyhrvold-V2-Part3.ipynb?create=1
+
+It is now called:
+mh370_mcmc_v2.py
+
+There is now a command line interface to change the monte carlo parameters and specify an output directory for the plots (see Examples).  
+
+The runways file is now in the archive/v1 directory, as the v2 script no longer requires it.
+
 
 Installation Requirements
 ----------------
@@ -45,6 +63,7 @@ Mac OSX
 ```
 ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)"
 brew install python geos
+pip install virtualenv
 virtualenv env
 source ./env/bin/activate
 export ARCHFLAGS=-Wno-error=unused-command-line-argument-hard-error-in-future
@@ -52,9 +71,32 @@ pip install numpy scipy matplotlib seaborn
 easy_install basemap
 ```
 	
-Execute
+Help
 ----------------
 ```
-unzip runways.txt.zip
-python ./mh370.py
+python ./mh370_mcmc_v2.py -h
+```	
+	
+Examples
+----------------
+This will put the plots in the directory "./examples/default"
+```
+python ./mh370_mcmc_v2.py -o examples/default
+```
+
+How to change the monte carlo parameters:
+
+This will change the last_known_heading to north
+```
+python ./mh370_mcmc_v2.py -l 0
+```
+
+This will change the km_hop to 400 km/h
+```
+python ./mh370_mcmc_v2.py -k 400
+```
+
+This will change the number of simulations to 10
+```
+python ./mh370_mcmc_v2.py -n 10
 ```
