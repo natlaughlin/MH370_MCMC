@@ -3,12 +3,16 @@ MH370_MCMC
 
 Modeling the Last Flight of MH370 with a Markov Chain Monte Carlo Method
 
-See: http://nbviewer.ipython.org/github/myhrvold/MH370_MCMC/blob/master/MH370_MC_ConorMyhrvold.ipynb?create=1
-
-For viewing IPython notebook in the web (or you can copy the url of the file yourself, in here: http://nbviewer.ipython.org/ )
-
 The original source is hosted here:
 https://github.com/myhrvold/MH370_MCMC
+
+Fast Lab Company stories:
+
+http://www.fastcolabs.com/3028265/how-i-narrowed-down-the-location-of-malaysia-air-using-monte-carlo-data-models
+
+http://www.fastcolabs.com/3028331/more-about-our-methodology-tracking-mh370-with-monte-carlo-data-models
+
+http://www.fastcolabs.com/3028569/this-data-model-shows-mh370-could-not-have-flown-accidentally-to-its-destination
 
 Updates
 ----------------
@@ -54,6 +58,9 @@ mh370_mcmc_v2.py
 There is now a command line interface to change the monte carlo parameters and specify an output directory for the plots (see Examples).  
 
 The runways file is now in the archive/v1 directory, as the v2 script no longer requires it.
+
+2014-04-02 (natlaughlin):
+
 
 
 Installation Requirements
