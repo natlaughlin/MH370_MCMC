@@ -51,15 +51,12 @@ http://qa.nbviewer.ipython.org/github/myhrvold/MH370_MCMC/blob/master/MH370_MC_C
 http://qa.nbviewer.ipython.org/github/myhrvold/MH370_MCMC/blob/master/MH370_MC_ConorMyhrvold-V2-Part3.ipynb?create=1
 
 
-
 It is now called:
 mh370_mcmc_v2.py
 
 There is now a command line interface to change the monte carlo parameters and specify an output directory for the plots (see Examples).  
 
 The runways file is now in the archive/v1 directory, as the v2 script no longer requires it.
-
-2014-04-02 (natlaughlin):
 
 
 
