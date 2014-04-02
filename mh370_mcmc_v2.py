@@ -2256,7 +2256,7 @@ legend.get_title().set_fontsize('20')
 plt.title('MH370 Position Progression Over Time', fontsize=30)
 
 #Show below
-plt.show()
+#plt.show()
 
 file = 'part2_plot_ln73.svg'
 savefig(plt, file)
