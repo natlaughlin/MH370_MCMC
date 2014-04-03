@@ -3,8 +3,20 @@ MH370_MCMC
 
 Modeling the Last Flight of MH370 with a Markov Chain Monte Carlo Method
 
+Conor L. Myhrvold
+conor.myhrvold@gmail.com
+Twitter: @conormyhrvold
+LinkedIn: www.linkedin.com/pub/conor-myhrvold/37/583/a7/
+
 The original source is hosted here:
 https://github.com/myhrvold/MH370_MCMC
+
+This is the standalone script version.
+
+Nat Laughlin
+http://natlaughlin.com
+http://github.com/natlaughlin
+
 
 Fast Lab Company stories:
 
