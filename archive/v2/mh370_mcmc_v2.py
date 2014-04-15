@@ -486,7 +486,6 @@ def haversine(r,lat1,lon1,lat2,lon2):
 
 ################################################################################################################################################################################################                
 
-
 """
 ping_prob_normal is specifically the 5th ping probability, which we have.
 we center a normal probability distribution upon the location of the radius line.
