@@ -21,6 +21,8 @@ http://www.fastcolabs.com/3028331/more-about-our-methodology-tracking-mh370-with
 
 http://www.fastcolabs.com/3028569/this-data-model-shows-mh370-could-not-have-flown-accidentally-to-its-destination
 
+http://www.fastcolabs.com/3028847/with-new-information-our-data-models-point-to-foul-play-on-malaysia-air-flight-370
+
 MH370_MCMC Standalone Script
 ----------------
 
@@ -72,6 +74,12 @@ mh370_mcmc_v2.py
 There is now a command line interface to change the monte carlo parameters and specify an output directory for the plots (see Examples).  
 
 The runways file is now in the archive/v1 directory, as the v2 script no longer requires it.
+
+2014-04-15 (natlaughlin):
+
+Moved v2 script to the archive.  Created a v3 standalone script (mh370_mcmc_v3.py) according to:
+
+http://nbviewer.ipython.org/github/myhrvold/MH370_MCMC/blob/master/MH370_MC_ConorMyhrvold-V3.ipynb?create=1
 
 
 Installation Requirements
@@ -125,4 +133,9 @@ python ./mh370_mcmc_v2.py -k 400
 This will change the number of simulations to 10
 ```
 python ./mh370_mcmc_v2.py -n 10
+```
+
+This will change the standard deviation to 45
+```
+python ./mh370_mcmc_v2.py -s 45
 ```
