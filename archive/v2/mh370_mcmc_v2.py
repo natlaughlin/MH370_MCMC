@@ -65,6 +65,17 @@ define number of simulations to run
 """.format(default)
 parser.add_option("-n", "--simulations", dest="simulations", default=default, help=help)
 
+default = 30
+help = """std_dev (default: {0})
+the standard deviation is the only arbitrary choice for us, along with the N=1000 simulations.
+but it fits the notion that the plane is likely to continue on the same course, allowing for
+some turns / heading change over the course of an hour. I stand by this number, although it's easy
+to change to 15 or 45 and see what the difference is. The smaller the number the narrower the
+ability to change heading is. The larger the number the more like a true "random walk" the plane's
+direction and by consequence, location will be, at each time step.
+""".format(default)
+parser.add_option("-s", "--std-dev", dest="std_dev", default=default, help=help)
+
 default = os.path.dirname(__file__)
 help = """output directory (default: {0})
 """.format(default)
@@ -475,6 +486,7 @@ def haversine(r,lat1,lon1,lat2,lon2):
 
 ################################################################################################################################################################################################                
 
+
 """
 ping_prob_normal is specifically the 5th ping probability, which we have.
 we center a normal probability distribution upon the location of the radius line.
@@ -692,6 +704,14 @@ std_dev = 30 #the standard deviation is the only arbitrary choice for us, along 
              #direction and by consequence, location will be, at each time step.
 
 ################################################################################################################################################################################################                
+
+#override simulation params with cli options
+
+if options.std_dev:
+    std_dev = float(options.std_dev)
+
+################################################################################################################################################################################################                
+
 
 plane_hops = []
 
@@ -924,6 +944,13 @@ savefig(plt, file)
 percenterror = 0.025
 
 std_dev = 30
+
+################################################################################################################################################################################################                
+
+#override simulation params with cli options
+
+if options.std_dev:
+    std_dev = float(options.std_dev)
 
 ################################################################################################################################################################################################                
 
@@ -3611,6 +3638,14 @@ percenterror1,percenterror2 = 0.05, 0.025
 std_dev = 30
 
 ################################################################################################################################################################################################                
+
+#override simulation params with cli options
+
+if options.std_dev:
+    std_dev = float(options.std_dev)
+
+################################################################################################################################################################################################                
+
 
 plane_hops_5per = []
 plane_hops_2per = []
