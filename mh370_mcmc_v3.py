@@ -72,7 +72,7 @@ direction and by consequence, location will be, at each time step.
 """.format(default)
 parser.add_option("-s", "--std-dev", dest="std_dev", default=default, help=help)
 
-default = os.path.dirname(os.path.realpath(__file__))
+default = os.getcwd()
 help = """output directory (default: {0})
 """.format(default)
 parser.add_option('-o', '--output-directory', dest='output_directory', default=default, help=help)
